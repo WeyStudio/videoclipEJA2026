@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Instructivo Filmación — Himno EJA 2026 | WEY Studio</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;background:#0d0d0d;color:#f0f0f0;line-height:1.7}
+a{color:#FF6B1A;text-decoration:none}
+a:hover{text-decoration:underline}
+.hero{background:linear-gradient(135deg,#0d0d0d 0%,#1a1a2e 50%,#0d0d0d 100%);padding:60px 24px 50px;text-align:center;position:relative;overflow:hidden;border-bottom:2px solid #FF6B1A}
+.hero::before{content:'';position:absolute;top:-40px;left:50%;transform:translateX(-50%);width:400px;height:400px;background:radial-gradient(circle,rgba(255,107,26,0.12) 0%,transparent 70%);pointer-events:none}
+.badge{display:inline-block;background:#FF6B1A;color:#fff;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:5px 14px;border-radius:20px;margin-bottom:18px}
+.hero h1{font-size:clamp(22px,5vw,40px);font-weight:900;line-height:1.15;color:#fff;margin-bottom:10px}
+.hero h1 span{color:#FF6B1A}
+.hero-sub{font-size:15px;color:#aaa;margin-bottom:28px;max-width:540px;margin-left:auto;margin-right:auto}
+.hero-meta{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
+.meta-pill{background:#1a1a1a;border:1px solid #333;border-radius:20px;padding:7px 16px;font-size:13px;color:#ccc;display:flex;align-items:center;gap:6px}
+.meta-pill strong{color:#FF6B1A}
+.artists-section{background:#111;padding:40px 24px;border-bottom:1px solid #222}
+.artists-section h2{font-size:13px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#FF6B1A;text-align:center;margin-bottom:24px}
+.artists-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;max-width:760px;margin:0 auto}
+.artist-card{background:#1a1a1a;border:1px solid #2a2a2a;border-radius:12px;padding:16px;text-align:center;transition:border-color 0.2s}
+.artist-card:hover{border-color:#FF6B1A}
+.artist-flag{font-size:28px;margin-bottom:8px}
+.artist-name{font-size:14px;font-weight:600;color:#fff;margin-bottom:2px}
+.artist-city{font-size:12px;color:#888}
+.content{max-width:780px;margin:0 auto;padding:0 24px}
+.section{padding:48px 0;border-bottom:1px solid #1e1e1e}
+.section-number{font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#FF6B1A;margin-bottom:8px}
+.section h2{font-size:clamp(18px,3vw,26px);font-weight:700;color:#fff;margin-bottom:16px;display:flex;align-items:center;gap:10px}
+.section-icon{width:36px;height:36px;background:#FF6B1A22;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+.section p{color:#b0b0b0;margin-bottom:14px;font-size:15px}
+.section p strong{color:#fff}
+.highlight{background:#1a1a1a;border-left:3px solid #FF6B1A;border-radius:0 8px 8px 0;padding:14px 18px;margin:16px 0;font-size:15px;color:#e0e0e0}
+.highlight strong{color:#FF6B1A}
+.tip{background:#1A2D3A;border:1px solid #1e4060;border-radius:10px;padding:14px 18px;margin:16px 0;font-size:14px;color:#90c8f0}
+.tip strong{color:#4ab0f0}
+.warning{background:#2a1a0a;border:1px solid #5a3010;border-radius:10px;padding:14px 18px;margin:16px 0;font-size:14px;color:#f0b070}
+.warning strong{color:#FF6B1A}
+.list{list-style:none;margin:14px 0}
+.list li{padding:8px 0 8px 24px;position:relative;color:#b0b0b0;font-size:15px;border-bottom:1px solid #1a1a1a}
+.list li:last-child{border-bottom:none}
+.list li::before{content:'→';position:absolute;left:0;color:#FF6B1A;font-weight:700}
+.list li strong{color:#fff}
+.broll-group{background:#161616;border:1px solid #252525;border-radius:12px;padding:18px;margin:14px 0}
+.broll-label{font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#888;margin-bottom:12px}
+.broll-group ul{list-style:none}
+.broll-group ul li{padding:5px 0 5px 20px;position:relative;color:#aaa;font-size:14px}
+.broll-group ul li::before{content:'▸';position:absolute;left:0;color:#FF6B1A}
+.broll-group ul li strong{color:#ddd}
+.tech-table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14px}
+.tech-table th{background:#1a1a1a;color:#FF6B1A;font-weight:600;text-align:left;padding:10px 14px;font-size:12px;letter-spacing:1px;text-transform:uppercase}
+.tech-table td{padding:10px 14px;border-bottom:1px solid #1e1e1e;color:#c0c0c0}
+.tech-table tr:last-child td{border-bottom:none}
+.tech-table tr:hover td{background:#151515}
+.fps-badge{background:#0d2a0d;border:1px solid #1a5a1a;color:#6dcf6d;font-size:12px;font-weight:600;padding:2px 8px;border-radius:20px}
+.res-badge{background:#1a1a3a;border:1px solid #2a2a6a;color:#8080ef;font-size:12px;font-weight:600;padding:2px 8px;border-radius:20px}
+.vest-options{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0}
+@media(max-width:520px){.vest-options{grid-template-columns:1fr}}
+.vest-card{background:#1a1a1a;border:1px solid #2a2a2a;border-radius:12px;padding:18px}
+.vest-card.ideal{border-color:#FF6B1A}
+.vest-tag{font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:3px 10px;border-radius:20px;display:inline-block;margin-bottom:10px}
+.vest-tag.ideal{background:#FF6B1A22;color:#FF6B1A}
+.vest-tag.alt{background:#222;color:#888}
+.vest-card h3{font-size:14px;font-weight:600;color:#fff;margin-bottom:8px}
+.vest-card p{font-size:13px;color:#999}
+.delivery-box{background:#0d1f0d;border:1px solid #1a4020;border-radius:14px;padding:24px;margin:20px 0;text-align:center}
+.delivery-box .delivery-icon{font-size:32px;margin-bottom:10px}
+.delivery-box h3{font-size:17px;font-weight:700;color:#fff;margin-bottom:6px}
+.delivery-box p{font-size:14px;color:#90b090;margin-bottom:16px}
+.delivery-link{display:inline-block;background:#FF6B1A;color:#fff;font-weight:700;font-size:14px;padding:12px 28px;border-radius:8px;text-decoration:none;letter-spacing:0.5px}
+.delivery-link:hover{background:#e05a10;text-decoration:none}
+.delivery-alt{margin-top:14px;font-size:13px;color:#6a8a6a}
+.folder-grid{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
+.folder{background:#161616;border:1px solid #2a2a2a;border-radius:8px;padding:7px 14px;font-size:13px;font-family:monospace;color:#90c8f0}
+.checklist{list-style:none;margin:16px 0}
+.checklist li{display:flex;align-items:flex-start;gap:12px;padding:10px 0;border-bottom:1px solid #1a1a1a;font-size:15px;color:#b0b0b0}
+.checklist li:last-child{border-bottom:none}
+.check-box{width:20px;height:20px;min-width:20px;border:2px solid #FF6B1A;border-radius:5px;margin-top:2px}
+.checklist li strong{color:#fff}
+.contact-section{background:#111;padding:48px 24px;text-align:center;border-top:2px solid #FF6B1A}
+.contact-section h2{font-size:22px;font-weight:700;color:#fff;margin-bottom:8px}
+.contact-section p{color:#888;margin-bottom:24px;font-size:15px}
+.contact-cards{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-bottom:28px}
+.contact-card{background:#1a1a1a;border:1px solid #2a2a2a;border-radius:12px;padding:16px 24px;text-align:left;min-width:200px}
+.contact-card .label{font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#666;margin-bottom:4px}
+.contact-card .val{font-size:15px;font-weight:600;color:#fff}
+.contact-card .val a{color:#FF6B1A}
+.footer-brand{font-size:13px;color:#555}
+.footer-brand strong{color:#777}
+.hashtags{margin-top:16px;font-size:12px;color:#444;letter-spacing:1px}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="badge">🎬 Videoclip Oficial</div>
+  <h1>Instructivo de Filmación<br><span>Himno EJA 2026</span></h1>
+  <p class="hero-sub">Encuentro Juvenil Arquidiocesano de Guayaquil — Todo lo que necesitan saber para grabar su parte desde sus ciudades.</p>
+  <div class="hero-meta">
+    <div class="meta-pill">🎙️ Productora: <strong>WEY Studio</strong></div>
+    <div class="meta-pill">🎬 Director: <strong>Kevin Cabezas</strong></div>
+    <div class="meta-pill">📍 <strong>Guayaquil, Ecuador</strong></div>
+  </div>
+</div>
+
+<div class="artists-section">
+  <h2>Artistas del Himno</h2>
+  <div class="artists-grid">
+    <div class="artist-card"><div class="artist-flag">🇦🇷</div><div class="artist-name">Pablo Martínez</div><div class="artist-city">Buenos Aires, Argentina</div></div>
+    <div class="artist-card"><div class="artist-flag">🇦🇷</div><div class="artist-name">Verónica Sanfilippo</div><div class="artist-city">Paraná, Argentina</div></div>
+    <div class="artist-card"><div class="artist-flag">🇵🇾</div><div class="artist-name">Itala y Juanjo</div><div class="artist-city">Asunción, Paraguay</div></div>
+    <div class="artist-card"><div class="artist-flag">🇪🇸</div><div class="artist-name">Paola Pablo</div><div class="artist-city">Madrid, España</div></div>
+  </div>
+</div>
+
+<div class="content">
+
+  <div class="section">
+    <div class="section-number">Intro</div>
+    <h2><span class="section-icon">👋</span> Bienvenidos a esta misión audiovisual</h2>
+    <p>Es un honor que sean parte del <strong>Himno Oficial del EJA 2026</strong> — un encuentro que reúne a la juventud de Guayaquil con fe, alegría y propósito. Ahora vamos a darle imagen a esa música.</p>
+    <p>Como cada uno está en una ciudad diferente, no será posible reunirnos físicamente para filmar. Por eso, les pedimos que se graben en sus propias ciudades siguiendo estas indicaciones. Lo que logren desde sus rincones del mundo se unirá en un solo videoclip que hable de lo que la canción ya dice: <strong>la fe nos une, sin importar dónde estemos.</strong></p>
+    <div class="tip"><strong>📌 Importante:</strong> No se preocupen si no son expertos en producción audiovisual — para eso está este instructivo, y para eso pueden apoyarse en un filmmaker o camarógrafo local de confianza.</div>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Parte 01</div>
+    <h2><span class="section-icon">🌍</span> Locación Icónica</h2>
+    <div class="highlight"><strong>Grábense en un lugar icónico de su ciudad.</strong></div>
+    <p>La idea es que el videoclip muestre que esta canción cruza fronteras. Que en Buenos Aires, Asunción, Madrid, Paraná… la misma fe se canta. Mientras más reconocible sea el lugar, mejor.</p>
+    <ul class="list">
+      <li>Una <strong>catedral o iglesia histórica</strong> — fachada, nave principal, atrio</li>
+      <li>Una <strong>plaza o parque central</strong> emblemático de su ciudad</li>
+      <li>Un <strong>monumento, mirador o lugar representativo</strong></li>
+      <li>Un espacio al aire libre con arquitectura o paisaje urbano característico</li>
+    </ul>
+    <p style="margin-top:12px;font-size:14px;color:#888">No tiene que ser algo súper producido — con que el lugar hable por sí solo, ya funciona. El fondo importa tanto como el artista.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Parte 02</div>
+    <h2><span class="section-icon">🎙️</span> Tomas Principales (Cantando)</h2>
+    <p>Estas son las tomas más importantes del videoclip. Aquí es donde cada uno canta directamente sus versos y los coros.</p>
+    <div class="broll-group">
+      <div class="broll-label">Plano General (PG)</div>
+      <ul>
+        <li>El artista <strong>de cuerpo completo</strong>, con la locación visible al fondo.</li>
+        <li>Cantan sus versos asignados + los coros a unísono.</li>
+        <li>La cámara puede estar estática o hacer un movimiento suave (lento, controlado).</li>
+        <li>El audio es <strong>ambiental</strong> — no importa el viento o ambiente. Luego hacemos sync con la canción máster.</li>
+      </ul>
+    </div>
+    <div class="broll-group">
+      <div class="broll-label">Plano Medio (PM)</div>
+      <ul>
+        <li>El artista <strong>desde la cintura hacia arriba</strong>, mismo lugar o variación del ángulo.</li>
+        <li>Misma dinámica: versos y coros.</li>
+        <li>Más expresión, más conexión con la cámara.</li>
+        <li>Variar el ángulo ligeramente para tener opciones en edición.</li>
+      </ul>
+    </div>
+    <div class="tip"><strong>💡 Consejo:</strong> Graben cada plano al menos 2 o 3 veces. La primera toma sirve para calentar — la segunda suele ser la mejor.</div>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Parte 03</div>
+    <h2><span class="section-icon">🎥</span> Tomas B Roll (Recursos / Narrativas)</h2>
+    <p>El B Roll es el "condimento" del videoclip. No son tomas de ustedes cantando directamente — son imágenes que cuentan una historia, generan emoción y le dan ritmo a la edición.</p>
+    <div class="broll-group">
+      <div class="broll-label">Movimiento y presencia</div>
+      <ul>
+        <li>Caminando hacia la cámara (o alejándose) en la locación, de manera natural.</li>
+        <li>Caminando entre la gente o por pasillos de una iglesia/catedral.</li>
+        <li>Girando hacia la cámara con una sonrisa auténtica mientras la cámara hace un <strong>dolly in</strong> lento.</li>
+        <li>Subiendo escalones de una plaza o catedral.</li>
+      </ul>
+    </div>
+    <div class="broll-group">
+      <div class="broll-label">Detalle expresivo</div>
+      <ul>
+        <li><strong>Plano detalle de los ojos</strong> — mirada a cámara, mirada al horizonte.</li>
+        <li><strong>Plano detalle de las manos</strong> — juntas, sosteniendo algo simbólico (Biblia, rosario, instrumento).</li>
+        <li><strong>Plano detalle de los pies caminando</strong> — sobre adoquines, piso de iglesia.</li>
+        <li><strong>Plano detalle de labios</strong> cantando suavemente o en silencio.</li>
+      </ul>
+    </div>
+    <div class="broll-group">
+      <div class="broll-label">Ambiente y fe</div>
+      <ul>
+        <li>El artista <strong>en una iglesia orando</strong> — de rodillas, sentado en una banca. Momento íntimo, de paz.</li>
+        <li>El artista <strong>mirando hacia un altar, imagen sagrada o vidriera</strong> de forma contemplativa.</li>
+        <li>El artista <strong>con los ojos cerrados</strong>, en actitud de oración, con luz natural desde una ventana.</li>
+        <li>El artista <strong>de espaldas mirando la catedral</strong> o el horizonte de la ciudad.</li>
+      </ul>
+    </div>
+    <div class="broll-group" style="border-color:#FF6B1A44">
+      <div class="broll-label" style="color:#FF6B1A">Con jóvenes — opcional pero ideal ⭐</div>
+      <ul>
+        <li>El artista <strong>rodeado de un grupo de jóvenes</strong>, compartiendo, hablando, riendo.</li>
+        <li>El artista <strong>liderando o participando en un momento de oración en grupo</strong>.</li>
+        <li>Jóvenes y el artista <strong>mirando al horizonte juntos</strong>, con energía y esperanza.</li>
+      </ul>
+    </div>
+    <div class="broll-group">
+      <div class="broll-label">Bonus de ambiente</div>
+      <ul>
+        <li>La <strong>locación icónica sin el artista</strong>: fachada de catedral, plaza al amanecer, paisaje urbano. Muy útil para apertura y cierre.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Parte 04</div>
+    <h2><span class="section-icon">💃</span> Coreografía o Movimiento</h2>
+    <p>Si la canción tiene algún paso, baile, movimiento trend o pequeña coreografía para el coro, <strong>sería genial que también se graben realizándola.</strong> Puede ser algo muy simple: un movimiento de manos, un gesto, un paso.</p>
+    <div class="warning"><strong>⚠️ Solo si aplica:</strong> Si no existe ningún movimiento o coreografía definida, simplemente ignoren esta sección.</div>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Parte 05</div>
+    <h2><span class="section-icon">🚁</span> Tomas de Drone (Petición Especial)</h2>
+    <p>Sabemos que no todos tendrán acceso a un drone — pero si su filmmaker tiene uno disponible, <strong>nos encantaría contar con tomas aéreas de la locación.</strong></p>
+    <ul class="list">
+      <li>La <strong>catedral o plaza desde el aire</strong>, con una toma que revele el entorno.</li>
+      <li>Una toma aérea que <strong>descubra al artista</strong> desde arriba.</li>
+      <li>El <strong>paisaje urbano o natural icónico</strong> de su ciudad.</li>
+    </ul>
+    <p style="margin-top:12px;font-size:14px;color:#888">Si pueden conseguirlas, perfecto. Si no, no hay problema — no es obligatorio.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Parte 06</div>
+    <h2><span class="section-icon">👕</span> Vestuario</h2>
+    <p>El vestuario parece un detalle pequeño pero marca muchísimo la coherencia visual. Queremos que haya un hilo visual que los una también en pantalla.</p>
+    <div class="vest-options">
+      <div class="vest-card ideal">
+        <span class="vest-tag ideal">⭐ Opción ideal</span>
+        <h3>Camiseta Oficial EJA 2026</h3>
+        <p>Si desean hacerse una camiseta con el logotipo oficial del EJA 2026, con gusto les enviamos los archivos en <strong>vectores</strong> para confeccionar localmente. Solo escríbannos.</p>
+      </div>
+      <div class="vest-card">
+        <span class="vest-tag alt">Alternativa</span>
+        <h3>Blanco + Accesorios</h3>
+        <p>Prenda superior <strong>principalmente blanca</strong>. Pueden complementar con chaquetas, sacos, sombreros o pañuelos — siempre con el blanco visible y predominante.</p>
+      </div>
+    </div>
+    <div class="tip"><strong>💡 Por qué blanco:</strong> Transmite pureza, unidad y luz — encaja perfectamente con el espíritu del EJA. Evitar estampados grandes, logos de otras marcas o colores muy llamativos.</div>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Parte 07</div>
+    <h2><span class="section-icon">⚙️</span> Especificaciones Técnicas</h2>
+    <p style="color:#FF6B1A;font-size:13px;font-weight:600;margin-bottom:14px">ESTA SECCIÓN ES PARA EL FILMMAKER O CAMARÓGRAFO — por favor, compártanla con él o ella.</p>
+    <table class="tech-table">
+      <tr><th>Tipo de toma</th><th>Resolución</th><th>Frame Rate</th></tr>
+      <tr><td>Tomas cantando (PG y PM)</td><td><span class="res-badge">4K / UHD</span></td><td><span class="fps-badge">24 fps</span></td></tr>
+      <tr><td>Tomas B Roll / recursos</td><td><span class="res-badge">4K / UHD</span></td><td><span class="fps-badge">60 o 120 fps</span> — slow motion</td></tr>
+      <tr><td>Tomas de drone</td><td><span class="res-badge">FHD o 4K</span></td><td>A criterio del operador</td></tr>
+    </table>
+    <div class="broll-group" style="margin-top:20px">
+      <div class="broll-label">Perfil de color</div>
+      <ul>
+        <li>Grabar siempre en perfil <strong>LOG (logarítmico)</strong>: S-Log, C-Log, V-Log o equivalente.</li>
+        <li>Fundamental para la corrección de color unificada en posproducción.</li>
+        <li><strong>Nunca grabar con perfiles procesados</strong>, filtros de cámara o contraste automático.</li>
+      </ul>
+    </div>
+    <div class="broll-group">
+      <div class="broll-label">Audio</div>
+      <ul>
+        <li>Audio <strong>ambiental</strong> — el micrófono de la cámara es suficiente.</li>
+        <li>Se usará solo para <strong>sincronización</strong> con la canción master en edición.</li>
+        <li>El artista debe cantar de verdad, con la letra completa, para facilitar el sync.</li>
+      </ul>
+    </div>
+    <div class="broll-group">
+      <div class="broll-label">Estabilización e iluminación</div>
+      <ul>
+        <li>Usar <strong>trípode o gimbal</strong> para tomas estáticas y movimientos suaves.</li>
+        <li>Aprovechar <strong>luz natural</strong> — amanecer o hora dorada (1h antes del atardecer).</li>
+        <li>Evitar filmar al mediodía con sol directo sobre el rostro.</li>
+        <li>En interiores, buscar la luz que entra por ventanas o vitrales.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Parte 08</div>
+    <h2><span class="section-icon">📦</span> Entrega de Material</h2>
+    <p>Una vez que tengan todo filmado, suban el material al siguiente enlace. Encontrarán una carpeta con el nombre de cada artista.</p>
+    <div class="delivery-box">
+      <div class="delivery-icon">☁️</div>
+      <h3>Subir material aquí</h3>
+      <p>MyAirBridge — Carpetas individuales por artista</p>
+      <a class="delivery-link" href="https://mab.to/kInwlBacH2xoy/us2" target="_blank">Ir al link de entrega →</a>
+      <div class="delivery-alt">También pueden enviar vía WeTransfer, Google Drive o Dropbox a<br><strong style="color:#90b090">kevincabezasdvf@gmail.com</strong></div>
+    </div>
+    <p style="margin-bottom:10px;color:#888;font-size:14px">Cómo organizar sus archivos antes de subir:</p>
+    <div class="folder-grid">
+      <div class="folder">PG_Cantando/</div>
+      <div class="folder">PM_Cantando/</div>
+      <div class="folder">BRoll/</div>
+      <div class="folder">Drone/ (si aplica)</div>
+    </div>
+    <p style="font-size:13px;color:#666;margin-top:10px">No compriman los archivos si pueden evitarlo. Si son muy pesados, pueden enviarlos en partes.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Check</div>
+    <h2><span class="section-icon">📋</span> Checklist Final</h2>
+    <p>Antes de enviar su material, revisen que tienen todo:</p>
+    <ul class="checklist">
+      <li><div class="check-box"></div><span>Tomas en <strong>Plano General</strong> cantando versos y coros (mínimo 2 tomas)</span></li>
+      <li><div class="check-box"></div><span>Tomas en <strong>Plano Medio</strong> cantando versos y coros (mínimo 2 tomas)</span></li>
+      <li><div class="check-box"></div><span>Tomas <strong>B Roll</strong> variadas: caminando, detalles, en iglesia, con jóvenes (si aplica)</span></li>
+      <li><div class="check-box"></div><span>Todo grabado en <strong>4K / 24fps</strong> (cantando) y <strong>60fps o 120fps</strong> (B Roll)</span></li>
+      <li><div class="check-box"></div><span>Perfil de color en <strong>LOG</strong></span></li>
+      <li><div class="check-box"></div><span>Locación <strong>icónica y reconocible</strong> de su ciudad</span></li>
+      <li><div class="check-box"></div><span>Vestuario <strong>blanco predominante</strong> (o camiseta oficial EJA si la consiguieron)</span></li>
+      <li><div class="check-box"></div><span>Tomas de <strong>drone</strong> (si fue posible conseguirlas)</span></li>
+      <li><div class="check-box"></div><span>Coreografía o movimiento (si aplica)</span></li>
+      <li><div class="check-box"></div><span>Material subido al <strong>link de MyAirBridge</strong> en su carpeta correspondiente</span></li>
+    </ul>
+  </div>
+
+</div>
+
+<div class="contact-section">
+  <h2>🙏 Gracias por ser parte de esto</h2>
+  <p>Su voz, su talento y su fe desde cada rincón del mundo van a hacer de este videoclip algo que la juventud de Guayaquil llevará en el corazón.<br>Cualquier duda, aquí estamos:</p>
+  <div class="contact-cards">
+    <div class="contact-card"><div class="label">WhatsApp</div><div class="val">+593 981 954 037</div></div>
+    <div class="contact-card"><div class="label">Email</div><div class="val"><a href="mailto:kevincabezasdvf@gmail.com">kevincabezasdvf@gmail.com</a></div></div>
+    <div class="contact-card"><div class="label">Instagram</div><div class="val"><a href="https://instagram.com/wey.studio" target="_blank">@wey.studio</a></div></div>
+  </div>
+  <div class="footer-brand">Videoclip producido por <strong>WEY STUDIO</strong> — Kevin Cabezas, Director &amp; Cinematographer · Guayaquil, Ecuador</div>
+  <div class="hashtags">#EJA2026 &nbsp;·&nbsp; #HimnoOficial &nbsp;·&nbsp; #WeMakeItSimple</div>
+</div>
+
+</body>
+</html>
